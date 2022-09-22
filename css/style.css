@@ -17,21 +17,24 @@ ul {
 }
 
 :root {
-  --black: #4d4c59;
-  --emphasis: #6c63ff;
+  --black: #1a201e;
+  --emphasis: #45291b;
   --light-grey: #c8c8c8;
   --text-color: #9c9ab6;
+  --background-button-hover: #cb9765;
   --container: 2.5rem;
 }
 
 main {
-  margin-inline: var(--container);
   margin-top: 1.25rem;
+  height: 100vh;
 }
 
 header {
+  margin-inline: var(--container);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 40px;
 }
 
@@ -55,22 +58,62 @@ header h1 {
 .countdown li span:nth-child(odd) {
   font-weight: lighter;
   font-size: 0.875rem;
+  color: var(--light-grey);
 }
 
 .countdown li span:nth-child(even) {
   font-size: 3.62rem;
+  color: var(--black);
 }
 
-.countdown .icon {
-  font-size: 3.62rem;
-  align-self: center;
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.countdown .icon:nth-child(-n + 3)::after {
+  content: ' ';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-top: -18px;
+  background-color: var(--black);
+  box-shadow: 0px 18px 0px 0px var(--black);
+}
+
+header p {
+  font-weight: lighter;
+  color: var(--text-color);
+  font-size: 0.875rem;
+}
+
+header button {
+  max-width: fit-content;
+  padding: 10px 32px;
+  margin-bottom: 10px;
+  background-color: var(--emphasis);
+  color: #ffff;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transform: scale(1);
+}
+
+header button:hover {
+  transform: scale(0.96);
+  background-color: var(--background-button-hover);
+  color: var(--black);
+  transition: all 0.5;
 }
 
 .img-curso {
   background-image: url(../assets/capa-countd.jpg);
   width: 100%;
-  height: 500px;
+  height: 62%;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 10px;
 }
