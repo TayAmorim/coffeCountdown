@@ -21,7 +21,7 @@ ul {
   --emphasis: #6c63ff;
   --light-grey: #c8c8c8;
   --text-color: #9c9ab6;
-  --container: 1.875rem;
+  --container: 2.5rem;
 }
 
 main {
@@ -61,5 +61,16 @@ header h1 {
   font-size: 3.62rem;
 }
 
+.countdown .icon {
+  font-size: 3.62rem;
+  align-self: center;
+}
+
 .img-curso {
+  background-image: url(../assets/capa-countd.jpg);
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
 }
