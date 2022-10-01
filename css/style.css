@@ -27,7 +27,6 @@ ul {
 
 main {
   margin-top: 1.25rem;
-  height: 100vh;
 }
 
 header {
@@ -51,6 +50,7 @@ header h1 {
 
 .countdown li {
   display: flex;
+  align-content: center;
   flex-direction: column;
   align-items: center;
 }
@@ -62,6 +62,7 @@ header h1 {
 }
 
 .countdown li span:nth-child(even) {
+  align-items: center;
   font-size: 3.62rem;
   color: var(--black);
 }
@@ -90,10 +91,10 @@ header p {
   font-size: 0.875rem;
 }
 
-header button {
+button {
   max-width: fit-content;
   padding: 10px 32px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
   background-color: var(--emphasis);
   color: #ffff;
   border: none;
@@ -102,7 +103,7 @@ header button {
   transform: scale(1);
 }
 
-header button:hover {
+button:hover {
   transform: scale(0.96);
   background-color: var(--background-button-hover);
   color: var(--black);
@@ -112,8 +113,52 @@ header button:hover {
 .img-curso {
   background-image: url(../assets/capa-countd.jpg);
   width: 100%;
-  height: 62%;
+  height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.modal {
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: var(--light-grey);
+  width: 60%;
+  padding: 30px;
+  border-radius: 4px;
+}
+
+.open {
+  top: 20%;
+  visibility: visible;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal form legend {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--emphasis);
+  font-weight: 700;
+}
+
+.modal form input {
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  color: var(--text-color);
+}
+
+.modal form button {
+  margin-top: 20px;
 }

@@ -17,29 +17,20 @@
     <main>
       <header>
         <h1>Novo curso de Barista iniciante...</h1>
-        <div id="countdown" class="countdown">
-          <ul>
-            <li>
-              <span>Dias</span>
-              <span class="icon">08</span>
-            </li>
-            <li>
-              <span>Horas</span>
-              <span class="icon">12</span>
-            </li>
-            <li>
-              <span>Minutos</span>
-              <span class="icon">44</span>
-            </li>
-            <li>
-              <span>Segundos</span>
-              <span>28</span>
-            </li>
-          </ul>
-        </div>
+        <div id="countdown" class="countdown"></div>
         <p>Inscreva-se para saber mais sobre o lançamento</p>
-        <button>Inscreva-se</button>
+        <button id="openModal">Inscreva-se</button>
       </header>
+      <section id="modal" class="modal">
+        <form action="">
+          <legend>Incrição curso barista 2023</legend>
+          <label for="name">Nome</label>
+          <input type="text" required />
+          <label for="email">Email</label>
+          <input type="email" required />
+          <button>Enviar</button>
+        </form>
+      </section>
       <div class="img-curso"></div>
     </main>
     <script src="./script/script.js"></script>

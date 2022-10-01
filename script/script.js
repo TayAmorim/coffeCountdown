@@ -1,13 +1,19 @@
-const targetDate = new Date('December 31, 2022 00:00:00').getTime()
+const targetDate = new Date('December 31, 2022 00:00:00')
+const button = document.getElementById('openModal')
+const modal = document.getElementById('modal')
+
+button.addEventListener('click', () => {
+  modal.classList.add('open')
+})
 
 const countdown = setInterval(function () {
   const now = new Date().getTime()
-  const TimeDate = targetDate - now
+  const timeDate = targetDate - now
 
-  let days = Math.floor(TimeDate / (1000 * 60 * 60 * 24))
-  let hours = Math.floor((TimeDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-  let minutes = Math.floor((TimeDate % (1000 * 60 * 60)) / (1000 * 60))
-  let seconds = Math.floor((TimeDate % (1000 * 60)) / 1000)
+  let days = Math.floor(timeDate / (1000 * 60 * 60 * 24))
+  let hours = Math.floor((timeDate % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+  let minutes = Math.floor((timeDate % (1000 * 60 * 60)) / (1000 * 60))
+  let seconds = Math.floor((timeDate % (1000 * 60)) / 1000)
 
   document.getElementById('countdown').innerHTML = `
   <div id="countdown" class="countdown">
