@@ -3,27 +3,27 @@
 </h1>
 
 <p align="center">
- <a href="#-funcionalidades">Funcionalidades</a> •
- <a href="#-layout">Layout</a> • 
- <a href="#-guia-de-estilo">Guia de estilo</a> • 
- <a href="#-tecnologias">Tecnologias</a> • 
- <a href="#autor">Autor</a>
+ <a href="#tecnologias">Tecnologias</a> •
+ <a href="#layout">Layout</a> • 
+ <a href="#guia-de-estilo">Guia de estilo</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#autora">Autora</a>
 </p>
 
 <h4 align="center"> 
 	🎉 Coffe-countdown - Concluído  🎉
 </h4>
 
-##  Sobre
+## Sobre
 Página de **coming song** para o lançamento do curso fictício de barista, que tem um countdown timer informando quanto tempo falta para o lançamento. Esta aplicação foi proposta como desafio da modalidade Discover da <a href="https://www.rocketseat.com.br/" target="_blank">Rocketseat.</a>
 
-##  Carcterísticas
+## Carcterísticas
 
 - Countdow timer com contagem regressiva.
 - Botão de "inscreva-se"
 - Modal para inscrição no curso de barista fictício.
 
-##  Tecnologias
+## Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -31,7 +31,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [CSS](https://www.w3schools.com/css/)
 - [Javascript](https://www.w3schools.com/js/js_intro.asp/)
 
-##  Layout
+## Layout
 O layout da aplicação original está disponível no Figma:
 
 <a href="https://www.figma.com/file/oDZqw3v8fem3v3RC7bTKV5/DD-%2F-Countdown/duplicate">
