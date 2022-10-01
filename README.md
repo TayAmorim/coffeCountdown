@@ -5,9 +5,9 @@
 <p align="center">
  <a href="#tecnologias">Tecnologias</a> •
  <a href="#layout">Layout</a> • 
- <a href="#guia-de-estilo">Guia de estilo</a> • 
+ <a href="#-guia-de-estilo">Guia de estilo</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
- <a href="#autora">Autora</a>
+ <a href="#-autora">Autora</a>
 </p>
 
 <h4 align="center"> 
