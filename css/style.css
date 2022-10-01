@@ -25,16 +25,14 @@ ul {
   --container: 2.5rem;
 }
 
-main {
-  margin-top: 1.25rem;
-}
-
 header {
+  padding-top: 1.25rem;
   margin-inline: var(--container);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  height: 50vh;
 }
 
 header h1 {
@@ -113,7 +111,7 @@ button:hover {
 .img-curso {
   background-image: url(../assets/capa-countd.jpg);
   width: 100%;
-  height: 500px;
+  height: 50vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -128,6 +126,7 @@ button:hover {
   left: 0;
   margin: 0 auto;
   background-color: var(--light-grey);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
   width: 60%;
   padding: 30px;
   border-radius: 4px;
@@ -142,6 +141,31 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.closed {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.closed div {
+  border: none;
+  background-color: var(--black);
+  width: 3px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.closed div:first-child {
+  rotate: 45deg;
+}
+
+.closed div:last-child {
+  position: relative;
+  right: 2px;
+  rotate: -45deg;
 }
 
 .modal form legend {

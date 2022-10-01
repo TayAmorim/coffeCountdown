@@ -1,9 +1,14 @@
 const targetDate = new Date('December 31, 2022 00:00:00')
 const button = document.getElementById('openModal')
 const modal = document.getElementById('modal')
+const closed = document.getElementById('closed')
 
 button.addEventListener('click', () => {
   modal.classList.add('open')
+})
+
+closed.addEventListener('click', () => {
+  modal.classList.remove('open')
 })
 
 const countdown = setInterval(function () {
